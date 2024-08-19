@@ -5,8 +5,9 @@ import Login from './pages/login/Login';
 import Cadastro from './pages/cadastro/Cadastro';
 import Senharec from './pages/senharec/Senharec'; 
 import Senhaalt from './pages/senhaalt/Senhaalt';
-import DefaltLayout from './components/DefaultLayout';
+import DefaultLayout from './components/DefaultLayout';
 import SimpleLayout from './components/SimpleLayout';
+import PrivateRouter from './components/PrivateRouter';
 
 
 function App() {
@@ -15,7 +16,9 @@ function App() {
     {/* <Header/> */}
       <BrowserRouter>
         <Routes>
-            <Route path='/' element={<DefaltLayout><Home/></DefaltLayout>}/>
+          <Route element={<PrivateRouter/>}>     </Route>  {/*inserir rotas de acesso restrito*/}
+
+            <Route path='/' element={<DefaultLayout><Home/></DefaultLayout>}/>
             <Route path='/login' element={<SimpleLayout><Login/></SimpleLayout>} />
             <Route path='/cadastro' element={<SimpleLayout><Cadastro/></SimpleLayout>} />
             <Route path='/senharec' element={<SimpleLayout><Senharec/></SimpleLayout>} /> 

@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import { Card } from 'primereact/card';
 import { InputText } from 'primereact/inputtext';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+    const [user, setUser] = useState({email:"", password:""}); 
+    const navigate = useNavigate();
+
+
+    const handleChange = (input) =>{
+        setUser({...user, [input.target.name]:input.target.value});
+    }
+
+    const login = () =>{
+        //chamaria o backend para buscar as credenciais
+    if (user.email == "teste@gmail.com" && user.password == "123"){
+        let token="token do backend"
+        localStorage.setItem("token",token);
+        localStorage.setItem("email", user.email);
+        navigate("/");
+    }else {
+        alert("usuário ou senha incorretos");
+    }
+    }
 
     return (
         <div className="login-container">
@@ -13,16 +33,16 @@ const Login = () => {
                 
                 <div className="field">
                     <label htmlFor="email">E-mail </label>
-                    <InputText id="email" aria-describedby="email-help" />
+                    <InputText onChange={handleChange} name="email" id="email" className="" />
                 </div> 
 
                 <div className="field">
                     <label htmlFor="password">Senha </label>
-                    <Password id="password" aria-describedby="password" />
+                    <Password onChange={handleChange} name="password" id="password" className="" />
                 </div> 
 
                 <div className="buttons">
-                    <Button label="Login" className="p-button-primary" />
+                    <Button onClick={login} label="Login" className="p-button-primary" />
                     <Button label="Cadastre-se" className="p-button-secondary" />
                     <Button label="Recuperar Senha" className="p-button-secondary" />
                 </div>
