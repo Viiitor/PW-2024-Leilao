@@ -12,10 +12,6 @@ const Logout = ()=>{
     }
 
 
-
-
-
-
     return(
         <>
         <Button label="Sair" onClick={logout}/>

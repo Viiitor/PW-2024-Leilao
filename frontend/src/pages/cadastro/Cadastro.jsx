@@ -4,6 +4,13 @@ import { Card } from "primereact/card";
 import { InputText } from 'primereact/inputtext';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
+import { useNavigate } from "react-router-dom";
+import Login from "../login/Login";
+
+
+const cancelar = () => {
+    navigate("/login")
+}
 
 const Cadastro = () => {
 
@@ -33,11 +40,12 @@ const Cadastro = () => {
                 <div className="buttons">
                     <Button label="Cadastrar-se" className="p-button-primary" />
                     <Button label="Cadastrar-se com Github" className="p-button-secondary" />
-                    <Button label="Cancelar Cadastro" className="p-button-secondary" />
+                    <Button onClick={cancelar} label="Cancelar Cadastro" className="p-button-secondary" />
                 </div>
             </Card>
         </div>
     );
 }
+
 
 export default Cadastro;

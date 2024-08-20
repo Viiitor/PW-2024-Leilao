@@ -27,6 +27,14 @@ const Login = () => {
     }
     }
 
+    const cadastro = () => {
+        navigate("/cadastro")
+    }
+
+    const senharec = () => {
+        navigate("/senharec")
+    }
+
     return (
         <div className="login-container">
             <Card title="Login" className="login-card">
@@ -43,8 +51,8 @@ const Login = () => {
 
                 <div className="buttons">
                     <Button onClick={login} label="Login" className="p-button-primary" />
-                    <Button label="Cadastre-se" className="p-button-secondary" />
-                    <Button label="Recuperar Senha" className="p-button-secondary" />
+                    <Button onClick={cadastro} label="Cadastre-se" className="p-button-secondary" />
+                    <Button onClick={senharec} label="Recuperar Senha" className="p-button-secondary" />
                 </div>
 
             </Card>
