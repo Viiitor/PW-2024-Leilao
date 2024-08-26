@@ -8,11 +8,14 @@ import { useNavigate } from "react-router-dom";
 import Login from "../login/Login";
 
 
-const cancelar = () => {
-    navigate("/login")
-}
 
 const Cadastro = () => {
+
+    const navigate = useNavigate();
+
+    const cancelar = () => {
+        navigate("/login");
+    }
 
     return (
         <div className="cadastro-container">

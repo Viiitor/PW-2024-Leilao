@@ -3,8 +3,16 @@ import "./Senharec.css";
 import { Card } from "primereact/card";
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
+import { useNavigate } from "react-router-dom";
 
 const Senharec = () => {
+
+    const navigate = useNavigate();
+
+    const cancelar = () => {
+        navigate("/login");
+    }
+
 
     return (
         <div className="senha-rec-container">
@@ -15,8 +23,8 @@ const Senharec = () => {
                 </div> 
 
                 <div className="buttons">
-                    <Button label="Cancelar" className="p-button-secondary" />
                     <Button label="Recuperar a Senha" className="p-button-primary" />
+                    <Button onClick={cancelar} label="Cancelar" className="p-button-secondary" />
                 </div>
             </Card>
         </div>

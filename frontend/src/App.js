@@ -8,6 +8,7 @@ import Senhaalt from './pages/senhaalt/Senhaalt';
 import DefaultLayout from './components/DefaultLayout';
 import SimpleLayout from './components/SimpleLayout';
 import PrivateRouter from './components/PrivateRouter';
+import Profile from './pages/profile/Profile';
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
             <Route path='/login' element={<SimpleLayout><Login/></SimpleLayout>} />
             <Route path='/cadastro' element={<SimpleLayout><Cadastro/></SimpleLayout>} />
             <Route path='/senharec' element={<SimpleLayout><Senharec/></SimpleLayout>} /> 
-          <Route path='/senhaalt' element={<SimpleLayout><Senhaalt /></SimpleLayout>} /> 
+          <Route path='/senhaalt' element={<SimpleLayout><Senhaalt/></SimpleLayout>} /> 
+          <Route path='/profile' element={<SimpleLayout><Profile/></SimpleLayout>} /> 
         </Routes>
       </BrowserRouter>
     {/*<Footer/> */}

@@ -5,9 +5,11 @@ const Footer = () =>{
 
     return(
         <div className="footer">
-            <p>&copy;2024</p>
+            <p>&copy; 2024 Leilões Online. Todos os direitos reservados.</p>
+            <p>Contato: contato@leiloesonline.com</p>
         </div>
     );
 
 }
 export default Footer;
+

@@ -1,6 +1,13 @@
+/* Footer.css */
+
 .footer {
-    border: 1px solid #aaa9a9;
-    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
     padding: 10px;
-    background-color: #dfdfdf;
+    border-radius: 0; /* Remove as bordas arredondadas para preencher a tela */
+    width: 100%; /* Garante que o footer ocupe 100% da largura da tela */
+    position: fixed; /* Fixa o footer na parte inferior da tela */
+    bottom: 0; /* Garante que o footer esteja na parte inferior */
+    left: 0;
 }

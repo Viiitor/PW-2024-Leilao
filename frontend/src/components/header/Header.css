@@ -1,6 +1,43 @@
-.header{
-    border: 1px solid #aaa9a9;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #dfdfdf;
+/* Header.css */
+
+.header {
+    background-color: #007bff; /* Cor de fundo do header */
+    color: #000; /* Cor do texto preta */
+    width: 100%; /* Ocupa toda a largura da tela */
+    position: fixed; /* Fixa o header na parte superior */
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #aaa9a9; /* Linha inferior do header */
+    display: flex;
+    align-items: flex-end; /* Alinha itens no fundo do header */
+    padding: 5px 0; /* Altura do header */
+}
+
+.menu {
+    display: flex; /* Alinha itens do menu horizontalmente */
+    justify-content: center; /* Centraliza o menu horizontalmente */
+    width: 100%; /* Ocupa toda a largura do header */
+}
+
+.menu ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Exibe os itens da lista em linha */
+}
+
+.menu ul li {
+    margin: 0 20px; /* Espaçamento maior entre itens do menu */
+}
+
+.menu ul li a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    padding: 8px 15px; /* Espaçamento interno dos links */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.menu ul li a:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    border-radius: 4px; /* Bordas arredondadas no hover */
 }
