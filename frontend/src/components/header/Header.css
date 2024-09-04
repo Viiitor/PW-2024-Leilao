@@ -1,7 +1,7 @@
 /* Header.css */
 
 .header {
-    background-color: #007bff; /* Cor de fundo do header */
+    background-color: #113153; /* Cor de fundo do header */
     color: #000; /* Cor do texto preta */
     width: 100%; /* Ocupa toda a largura da tela */
     position: fixed; /* Fixa o header na parte superior */
@@ -17,6 +17,7 @@
     display: flex; /* Alinha itens do menu horizontalmente */
     justify-content: center; /* Centraliza o menu horizontalmente */
     width: 100%; /* Ocupa toda a largura do header */
+    background-color: #113153;
 }
 
 .menu ul {
@@ -34,10 +35,11 @@
     color: #fff; /* Cor do texto dos links */
     text-decoration: none; /* Remove sublinhado dos links */
     padding: 8px 15px; /* Espaçamento interno dos links */
+    background-color: #113153; /* Cor de fundo igual à do header */
     transition: background-color 0.3s; /* Transição suave para a cor de fundo */
 }
 
 .menu ul li a:hover {
-    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    background-color: #0d2a45; /* Cor de fundo um pouco mais escura ao passar o mouse */
     border-radius: 4px; /* Bordas arredondadas no hover */
 }

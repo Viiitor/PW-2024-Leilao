@@ -19,8 +19,8 @@ const Home = () => {
             <main className="main-content">
                 <h1>{t('welcome')}</h1>
                 <p>Bem-vindo ao sistema de leilões. Aqui você pode participar de leilões ao vivo, fazer ofertas e muito mais.</p>
-                <button onClick={()=> changeLanguage('en')}>English</button>
-                <button onClick={() => changeLanguage('pt')}>Português</button>
+                <button onClick={()=> changeLanguage('en')}>En</button>
+                <button onClick={() => changeLanguage('pt')}>Pt</button>
             </main>
 
             {/* Opção de Logout */}
@@ -35,4 +35,3 @@ const Home = () => {
 
 export default Home;
 
-aaaaaaaaa
