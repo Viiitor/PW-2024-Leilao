@@ -1,21 +1,19 @@
-import { Button } from "primereact/button";
 import React from "react";
+import { Button } from "primereact/button";
 import { useNavigate } from "react-router-dom";
 
-const Logout = ()=>{
+const Logout = ({ buttonText }) => {  // Desestruturação correta
     const navigate = useNavigate();
 
-    const logout = () =>{
+    const logout = () => {
         localStorage.removeItem("token");
         localStorage.removeItem("email");
-        navigate("/login")
+        navigate("/login");
     }
 
-
-    return(
-        <>
-        <Button label="Sair" onClick={logout}/>
-        </>
+    return (
+        <Button label={buttonText} onClick={logout} />
     );
 }
+
 export default Logout;

@@ -1,7 +1,51 @@
 {
-    "welcome": "Welcome",
-    "login": "Acessar",
-    "password": "Senha",
-    "email": "E-mail",
-    "Perfil": "Profile"
+  "welcome": "Welcome",
+  "login": "Login",
+  "password": "Password",
+  "email": "Email",
+
+  "header": {
+    "home": "Home",
+    "auctions": "Auctions",
+    "bids": "My Bids",
+    "profile": "Profile",
+    "contact": "Contact",
+    "logout": "Logout"
+  },
+
+  "home": {
+    "intro": "Welcome to the auction system. Here you can participate in live auctions, place bids, and much more."
+  },
+
+  
+    "footer": {
+      "copyright": "&copy; 2024 Online Auctions. All rights reserved.",
+      "contact": "Contact: contato@leiloesonline.com"
+    },
+  
+    
+      "dashboard": {
+        "activeAuctions": "Active Auctions",
+        "recentlySoldItems": "Recently Sold Items",
+        "recentUsers": "Recent Users",
+        "totalSales": "Total Sales"
+      },
+      
+      "profile": {
+        "title": "Edit Profile",
+        "name": "Name",
+        "cpf": "CPF",
+        "address": "Full Address",
+        "profilePhoto": "Profile Photo",
+        "saveChanges": "Save Changes",
+        "cancel": "Cancel",
+        "nameRequired": "Name is required",
+        "cpfInvalid": "Invalid CPF",
+        "addressRequired": "Address is required",
+        "namePlaceholder": "Enter your name",
+        "cpfPlaceholder": "Enter your CPF",
+        "addressPlaceholder": "Enter your full address"
+    }
+    
+    
 }

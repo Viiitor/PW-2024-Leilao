@@ -1,45 +1,74 @@
-/* Header.css */
-
 .header {
-    background-color: #113153; /* Cor de fundo do header */
-    color: #000; /* Cor do texto preta */
-    width: 100%; /* Ocupa toda a largura da tela */
-    position: fixed; /* Fixa o header na parte superior */
+    background-color: #113153;
+    color: #000;
+    width: 100%;
+    position: fixed;
     top: 0;
     left: 0;
-    border-bottom: 1px solid #aaa9a9; /* Linha inferior do header */
+    border-bottom: 1px solid #aaa9a9;
     display: flex;
-    align-items: flex-end; /* Alinha itens no fundo do header */
-    padding: 5px 0; /* Altura do header */
-}
-
-.menu {
-    display: flex; /* Alinha itens do menu horizontalmente */
-    justify-content: center; /* Centraliza o menu horizontalmente */
-    width: 100%; /* Ocupa toda a largura do header */
-    background-color: #113153;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Ajusta o padding lateral */
+    height: 60px; /* Define a altura do header */
+    z-index: 1000;
 }
 
 .menu ul {
-    list-style-type: none; /* Remove marcadores da lista */
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Exibe os itens da lista em linha */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens do menu */
 }
 
 .menu ul li {
-    margin: 0 20px; /* Espaçamento maior entre itens do menu */
+    margin: 0 20px;
 }
 
 .menu ul li a {
-    color: #fff; /* Cor do texto dos links */
-    text-decoration: none; /* Remove sublinhado dos links */
-    padding: 8px 15px; /* Espaçamento interno dos links */
-    background-color: #113153; /* Cor de fundo igual à do header */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #113153;
+    transition: background-color 0.3s;
+    line-height: 60px; /* Ajusta o alinhamento vertical */
 }
 
 .menu ul li a:hover {
-    background-color: #0d2a45; /* Cor de fundo um pouco mais escura ao passar o mouse */
-    border-radius: 4px; /* Bordas arredondadas no hover */
+    background-color: #0d2a45;
+    border-radius: 4px;
+}
+
+.language-buttons button {
+    background-color: #113153; /* Cor de fundo dos botões */
+    color: #fff; /* Cor do texto */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.language-buttons button:hover {
+    background-color: #0d2a45; /* Cor de fundo ao passar o mouse */
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+}
+
+.logout-button button {
+    background-color: #113153; /* Cor de fundo do botão de logout */
+    color: #fff; /* Cor do texto */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-button button:hover {
+    background-color: #0d2a45; /* Cor de fundo ao passar o mouse */
 }

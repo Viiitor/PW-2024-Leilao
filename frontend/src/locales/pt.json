@@ -1,7 +1,63 @@
 {
-    "welcome": "Bem-vindo",
-    "login": "Acessar",
-    "password": "Senha",
-    "email": "E-mail",
-    "Perfil": "Perfil"
+  "welcome": "Bem-vindo",
+  "login": "Acessar",
+  "password": "Senha",
+  "email": "E-mail",
+
+  "header": {
+    "home": "Home",
+    "auctions": "Leilões",
+    "bids": "Meus Lances",
+    "profile": "Perfil",
+    "contact": "Contato",
+    "logout": "Sair"
+  },
+
+  "home": {
+    "intro": "Bem-vindo ao sistema de leilões. Aqui você pode participar de leilões ao vivo, fazer ofertas e muito mais."
+  },
+
+  
+    "footer": {
+      "copyright": "&copy; 2024 Leilões Online. Todos os direitos reservados.",
+      "contact": "Contato: contato@leiloesonline.com"
+    },
+  
+    
+      "dashboard": {
+        "activeAuctions": "Leilões Ativos",
+        "recentlySoldItems": "Últimos Itens Arrematados",
+        "recentUsers": "Últimos Usuários Cadastrados",
+        "totalSales": "Total de Vendas Realizadas"
+      },
+    
+      "profile": {
+        "title": "Editar Perfil",
+        "name": "Nome",
+        "cpf": "CPF",
+        "address": "Endereço Completo",
+        "profilePhoto": "Foto de Perfil",
+        "saveChanges": "Salvar Alterações",
+        "cancel": "Cancelar",
+        "nameRequired": "Nome é obrigatório",
+        "cpfInvalid": "CPF inválido",
+        "addressRequired": "Endereço é obrigatório"
+    },
+
+    "profile": {
+        "title": "Editar Perfil",
+        "name": "Nome",
+        "cpf": "CPF",
+        "address": "Endereço Completo",
+        "profilePhoto": "Foto de Perfil",
+        "saveChanges": "Salvar Alterações",
+        "cancel": "Cancelar",
+        "nameRequired": "Nome é obrigatório",
+        "cpfInvalid": "CPF inválido",
+        "addressRequired": "Endereço é obrigatório",
+        "namePlaceholder": "Digite seu nome",
+        "cpfPlaceholder": "Digite seu CPF",
+        "addressPlaceholder": "Digite seu endereço completo"
+    }
+  
 }

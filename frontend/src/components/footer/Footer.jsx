@@ -1,15 +1,16 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./Footer.css";
 
-const Footer = () =>{
+const Footer = () => {
+    const { t } = useTranslation();
 
-    return(
+    return (
         <div className="footer">
-            <p>&copy; 2024 Leilões Online. Todos os direitos reservados.</p>
-            <p>Contato: contato@leiloesonline.com</p>
+            <p dangerouslySetInnerHTML={{ __html: t('footer.copyright') }} />
+            <p>{t('footer.contact')}</p>
         </div>
     );
-
 }
-export default Footer;
 
+export default Footer;

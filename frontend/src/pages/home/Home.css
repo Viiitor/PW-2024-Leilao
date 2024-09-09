@@ -1,30 +1,42 @@
-/* Home.css */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+.header {
+    background-color: #113153; /* Cor de fundo do header */
+    color: #000; /* Cor do texto preta */
+    width: 100%; /* Ocupa toda a largura da tela */
+    position: fixed; /* Fixa o header na parte superior */
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #aaa9a9; /* Linha inferior do header */
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    justify-content: space-between; /* Espaça os elementos do header */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    padding: 5px 20px; /* Altura do header e espaçamento */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
 }
 
-.home-container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+.language-buttons {
+    display: flex; /* Alinha os botões de idioma horizontalmente */
+    gap: 10px; /* Espaçamento entre os botões de idioma */
+}
+
+.language-buttons button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.language-buttons button:hover {
+    background-color: #0056b3;
 }
 
 .menu {
-    background-color: #007bff;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza o menu horizontalmente */
+    flex-grow: 1; /* Permite que o menu ocupe o espaço restante */
+    background-color: #113153;
 }
 
 .menu ul {
@@ -32,45 +44,26 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
 }
 
 .menu ul li {
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 .menu ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 4px;
+    padding: 8px 15px;
+    background-color: #113153;
     transition: background-color 0.3s;
 }
 
 .menu ul li a:hover {
-    background-color: #0056b3;
-}
-
-.main-content {
-    flex: 1;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-bottom: 20px;
-    text-align: center;
+    background-color: #0d2a45;
+    border-radius: 4px;
 }
 
 .logout-button {
-    text-align: right;
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
-
-.footer {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    border-radius: 8px;
-}
-
